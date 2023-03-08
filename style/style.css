@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive; 
+    user-select:none
+}
+
+body{
+    background-color: #e9e9e9;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav .list1 li{
+    margin-right: 20px;
+}
+
+
+nav .list1 li:hover a{
+    color: #fec506;
+    transition: 0.5s;
+}
+
+nav .list1 li:nth-child(5){
+    color: #fec506;
+    display: none;
+}
+
+nav .list1 li:nth-child(6){
+    color: darkgray;
+    display: none;
+}
+
+nav .list2{
+    color: #fec506;
+}
+
+nav .list2 li{
+    color: #fec506;
+    margin-right: 70px;
+}
+
+nav .list2 li:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+nav .list2 i{
+    color: darkgray;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .quadrado{
+    height: 90px;
+    width: 80px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+nav .quadrado .logo{
+    height: 80px;
+    width: 100%;
+}
+
+nav .quadrado .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container1{
+    height: 65vh;
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    background-color: white;
+}
+
+.container1 .caminhao{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container1 .caminhao .titulo{
+    display: none;
+}
+
+.container1 .caminhao img{
+    width: 95%;
+    object-fit: cover;
+}
+
+.container1 .titulo{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 100px;
+}
+
+.container1 .titulo h1{
+    font-size: 150px;
+    color: black;
+}
+
+.container1 .titulo h2{
+    font-size: 80px;
+    color: #fec506;
+}
+
+.container2{
+    height: 100%;
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+}
+
+.container2 .linhat{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    background-color: #fec506;
+    justify-content: center;
+}
+
+.container2 .triangulo{
+    width: 0; 
+    height: 0; 
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 60px solid white;
+}
+
+.container2 .cards{
+    height: 100%;
+    width: 100%;
+    background-color: #fec506;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 .cards a{
+    text-decoration: none;
+}
+
+.container2 .cards .card{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    margin: 10px;
+}
+
+.container2 .cards .card:hover .texto{
+    box-shadow: 0px -10px 0px 0px rgba(0,0,0);
+    transition: 0,5s;
+}
+
+.container2 .cards .card .imagem{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .cards .card .imagem img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.container2 .cards .card .texto{
+    height: 35%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+
+.container2 .cards .card .texto span{
+    text-transform: uppercase;
+    color: #fec506;
+    font-size: 30px;
+}
+
+.container3{
+    max-width: 1200px;
+    width: 95%;
+    height: 100%;
+    background-color: #fec506;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.container3 .escavadeiravalor{
+    min-height: 300px;
+    height: 100%;
+    max-width: 860px;
+    background-color: #fec506;
+    margin: auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3 .escavadeiravalor .escavadeira{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.container3 .escavadeiravalor .escavadeira h3{
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+
+}
+
+.container3 .escavadeiravalor .escavadeira img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container3 .escavadeiravalor .valor{
+    height: 100%;
+    min-height: 324px;
+    width: 50%;
+    position: relative;
+}
+
+.container3 .escavadeiravalor .valor p:nth-child(1){
+    font-size: 250px;
+    line-height: 220px;
+    
+}
+
+.container3 .escavadeiravalor .valor p:nth-child(2){
+    font-size: 30px;
+    color : white;
+    margin-top: -15px;
+}
+
+.container3 .escavadeiravalor .valor div{
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 40px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.container4{
+    max-width: 1200px;
+    width: 95%;
+    height: 100%;
+    background-color: #fec506;
+    margin: auto;
+    display: flex;
+    justify-content: center;    
+}
+
+.container4 .detalhes{
+    height: 100%;
+    width: 700px;
+    background-color: black;
+    position: relative;
+}
+
+.container4 .detalhes .trabalho{
+    height: 430px;
+    width: 430px;
+    background-image: url(./../assets/obra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container4 .detalhes .trabalho .go{
+    background-color: #fec406c5;
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.container4 .detalhes .trabalho .go:hover{
+    background-color: #fec406;
+    transition: 0.5s;
+}
+
+.container4 .detalhes .trabalho .go .alinhamento{
+    width: 70px;
+    height: 110px;
+}
+
+
+.container4 .detalhes .trabalho .go p:nth-child(1){
+    font-size: 25px;
+}
+
+.container4 .detalhes .trabalho .go p:nth-child(2){
+    font-size: 90px;
+    line-height: 60px;
+}
+
+
+.container4 .detalhes .trabalho .go img{ 
+    width: 100%;
+    transform: rotate(180deg);
+    margin-top: -20px;
+}
+
+.container4 .detalhes .caixa1{
+    height: 100%;
+    width: 430px;
+}
+
+.container4 .detalhes .caixa1 .titulo{
+    height: 100%;
+    width: 400px;
+    padding: 50px 90px 10px 20px;  
+}
+
+.container4 .detalhes .caixa1 .titulo p{
+    font-size: 30px;
+    color: white;
+    line-height: 35px;
+}
+
+.container4 .detalhes .caixa1 .triangulo{
+    height: 200px;
+    width: 30px;
+    position: relative;
+    float: right;
+}
+
+.container4 .detalhes .caixa1 .triangulo .tri{
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    border-right:25px solid #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.container4 .detalhes .caixa1 .texto{
+    width: 400px;
+    height: 100%;
+    padding: 0 10px 0 20px;
+    margin-bottom: 10px;
+}
+
+.container4 .detalhes .caixa1 .texto p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.container4 .detalhes .caixa2{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 20px;
+}
+
+.container4 .detalhes .caixa2 p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.container4 .overview{
+    width: 430px;
+    height: 750px;
+    background-color: white;
+    margin-left: -270px;
+    z-index: 300;
+    padding: 50px 35px 10px 35px;
+    position: relative;
+}
+
+.container4 .overview h3{
+    font-size: 50px;
+}
+
+.container4 .overview p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+}
+
+.container4 .overview img{
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.container5{
+    max-width: 1200px;
+    width: 95%;
+    height: 100%;
+    background-color: #fec406;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container5 .sub5 {
+    height: 100%;
+    max-width: 860px;
+    width: 100%;
+}
+
+.container5 .sub5 h2{
+    font-size: 170px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    line-height: 75px;
+}
+
+.container5 .sub5 h4{
+    font-size: 70px;
+    margin-left: 5px;
+}
+
+.container5 .sub5 img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.container5 .sub5 .contBotao {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container5 .sub5 .contBotao button{
+    height: 100%;
+    width: 200px;
+    color: #fec406;
+    background-color: black;
+    margin: auto;
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.container5 .sub5 hr{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container6{
+    height: 100%;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #fec406;
+    padding-bottom: 20px;
+}
+
+.container6 .cards{
+    height: 100%;
+    max-width: 860px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container6 .cards .card{
+    width: 200px;
+}
+
+.container6 .cards .card h6{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.container6 .cards .card p{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container7{
+    height: 100%;
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    background-color: #fec406;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container7 .circulo{
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.container7 .circulo i{
+    margin-top: 5px;
+}
+
+.container8{
+    height: 50px;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fec406;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+@media (max-width: 1050px){
+
+    .container1 .titulo{
+        line-height: 75px;
+    }
+    .container1 .titulo h1{
+        font-size: 100px;
+    }
+    
+    .container1 .titulo h2{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    nav{
+        height: 70px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+
+    nav button{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    nav i.close{
+        font-size: 24px;
+        color: darkgray;
+    }
+
+    nav .menu.aberto{
+        max-width: 300px;
+        width: 100%;
+        height: 220px;
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: black;
+    }
+
+    nav .menu{
+        display: none;
+        z-index: 101;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    
+    nav .list1 li{
+        margin-bottom: 5px;
+    }
+    
+    nav .list1 li:nth-child(5){
+        display: block;
+    }
+    
+    nav .list1 li:nth-child(6){
+        display: block;
+    }
+    
+    nav .list2{
+        display: none;
+    }
+
+    .container1{
+        justify-content: end;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container1 .caminhao{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container1 .caminhao img{
+        width: 95%;
+        object-fit: cover;
+    }
+
+    .container1 .caminhao .titulo{
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .container1 .titulo{
+        display: none;
+    }
+
+    .container2{
+        width: 100%;
+    }
+
+    .container2 .linhat{
+        height: 55px;
+        width: 100%;
+    }
+    
+    .container2 .linhat .triangulo{
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-top: 50px solid white;
+    }
+
+    .container3{
+        width: 100%;
+    }
+    
+    .container3 .escavadeiravalor .escavadeira{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 .escavadeiravalor .escavadeira h3{
+        top: 20px;
+        left: 20px;
+    }
+    
+    .container3 .escavadeiravalor .escavadeira img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container3 .escavadeiravalor .valor{
+        height: 100%;
+        width: 100%;
+        min-height: 0;
+        position: relative;
+        text-align: end;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .container3 .escavadeiravalor .valor p:nth-child(1){
+        font-size: 250px;
+        line-height: 220px;
+        margin-top: 0px;
+    }
+    
+    .container3 .escavadeiravalor .valor p:nth-child(2){
+        font-size: 29px;
+        color : rgb(0, 0, 0);
+        margin-top: -15px;
+    }
+    
+    .container3 .escavadeiravalor .valor div{
+        width: 0; 
+        height: 0; 
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 0 solid white;
+        border-top: 40px solid #fec506;
+        position: absolute;
+        top: 0;
+        left: 60px;
+    }
+
+   
+    .container4{
+        width: 100%;
+        margin: 0px auto 0 auto;
+        display: block;     
+    }
+    
+    .container4 .detalhes{
+        width: 100%;
+        max-width: 860px;
+        margin: auto;
+    }
+    
+    .container4 .detalhes .trabalho{
+        width: 100%;
+    }
+
+    .container4 .detalhes .caixa1{
+        width: 100%;
+    }
+    
+    .container4 .detalhes .caixa1 .titulo{
+        width: 100%;
+        padding: 20px 10px 10px 10px;  
+        text-align: center;
+    }
+    
+    .container4 .detalhes .caixa1 .triangulo{
+        display: none;
+    }
+    
+    .container4 .detalhes .caixa1 .texto{
+        width: 100%;
+    }
+    
+    .container4 .overview{
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+        margin-left: 0;
+        max-width: 860px;
+        margin: 0 auto 0 auto;
+    }
+    
+    .container4 .overview h3{
+        text-align: center;
+    }
+    
+    .container4 .overview p{
+        text-align: justify;
+    }
+    
+    .container4 .overview img{
+        position: static;
+        margin: auto;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .container5{
+        width: 100%;
+    }
+
+    .container5 .sub5 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container5 .sub5 h2{
+        font-size: 140px;
+        margin-top: 50px;
+        line-height: 60px;
+    }
+
+    .container5 .sub5 h4{
+        font-size: 65px;
+    }
+
+    .container5 .sub5 img{
+        height: 400px;
+    }
+
+        
+    .container6{
+        width: 100%;
+    }
+
+    .container6 .cards{
+        flex-direction: column;
+        
+    }
+
+    .container6 .cards .card{
+        width: 80%;
+        max-width: 500px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .container7{
+        width: 100%;
+    }
+
+    .container8{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px)
+{
+    
+    nav .quadrado{
+        height: 70px;
+    }
+
+    .container1{
+        justify-content: end;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container1 .caminhao{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container1 .caminhao img{
+        width: 95%;
+        object-fit: cover;
+    }
+
+    .container1 .caminhao .titulo{
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .container1 .titulo{
+        display: none;
+    }
+
+    .container1  .caminhao  .titulo{
+        line-height: 60px;
+    }
+    .container1 .caminhao  .titulo h1{
+        font-size: 80px;
+    }
+    
+    .container1 .caminhao  .titulo h2{
+        font-size: 45px;
+    }
+
+    .container2 .linhat{
+        height: 45px;
+    }
+    
+    .container2 .linhat .triangulo{
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 45px solid white;
+    }
+    
+    
+    .container3 .escavadeiravalor .valor p:nth-child(1){
+        font-size: 170px;
+        line-height: 220px;
+        margin-right: 10px;
+        margin-top: -35px;
+    }
+    
+    .container3 .escavadeiravalor .valor p:nth-child(2){
+        font-size: 24px;
+        margin-top: -45px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .container3 .escavadeiravalor .valor div{
+        width: 0; 
+        height: 0; 
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 0 solid white;
+        border-top: 40px solid #fec506;
+        position: absolute;
+        top: 0;
+        left: 60px;
+    }
+
+
+    .container5 .sub5 h2{
+        font-size: 90px;
+        margin-top: 50px;
+        line-height: 35px;
+    }
+
+    .container5 .sub5 h4{
+        font-size: 50px;
+    }
+
+    .container5 .sub5 img{
+        height: 350px;
+    }
+
+    .container5 .sub5 .contBotao {
+        height: 60px;
+    }
+    
+    .container5 .sub5 .contBotao button{
+        width: 160px;
+        font-size: 40px;
+    }
+
+    .container5 .sub5 hr{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container7 .circulo{
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .container7 .circulo i{
+        margin-top: 3px;
+        margin-left: 1px;
+    }
+
+}
+
+@media (max-width: 350px){
+    .container5 .sub5 h2{
+        font-size: 70px;
+        margin-top: 50px;
+        line-height: 30px;
+    }
+
+    .container5 .sub5 h4{
+        font-size: 35px;
+    }
+
+    .container5 .sub5 img{
+        height: 280px;
+    }
+}
+
+
